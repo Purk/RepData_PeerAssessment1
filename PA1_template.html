@@ -57,7 +57,8 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <h1>Reproducible Research: Peer Assessment1</h1>
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
-<pre class="r"><code>theData &lt;- read.csv('/home/rodney/Projects/Git_repos/RepData_PeerAssessment1/activity.csv', stringsAsFactors=FALSE, header=TRUE)
+<pre class="r"><code>library(knitr)
+theData &lt;- read.csv('/home/rodney/Projects/Git_repos/RepData_PeerAssessment1/activity.csv', stringsAsFactors=FALSE, header=TRUE)
 #omit any NA's:
 theData2 &lt;- na.omit(theData)
 #aggregate steps for each date:
